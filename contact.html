@@ -5,89 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>jarditou</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
+ 
+
 <body>
-    <img src="images/jarditou_logo.jpg" alt="Logo_jarditou" height="70" width="300">
-    <br>
-    <p>La qualité depuis 70 ans</p>
+<div class="container">
+        <div class="row justify-content-start">
+        <div class="col-9 d-none d-md-block"><img src="images/jarditou_logo.jpg" class="img-fluid" height="70" width="170" ></div>
+        <div class="col-3 d-none d-md-block"><h1>Tout le jardin</h1></div>
+</div>
 
-    <nav>
-        <ul id="information1">
-        <li><a href="index.html" title="Accueil">Accueil</a></li>
-        <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-        <li><a href="contact.html" title="Contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jarditou.com</a>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+                <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="tableau.html">Tableau</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+    </ul>
+            
+<form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button> 
+</form>
+</nav>
 
-        <br>
-    <img src="images/promotion.jpg" alt="jarditou_logo" width= 100% >
 
-<h1>Contact</h1>
-<hr>
-    <br>
+<img src="images/promotion.jpg" class="img-fluid" alt="jarditou_logo">
+
+<br>
+<br>
 
 <p>* Ces zones sont obligatoires</p>
 
-<fieldset style=max-width:100%;>
-<legend>Coordonnées</legend>
-<form>
-<label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom">
-<br>
-<label for="prénom">Votre prénom* :</label><input type="text" name="prénom" id="prénom">
-</form>
-<br>
+
+<h1>Vos Coordonnées</h1>
 
 <form>
-<label for="sexe">Sexe* :</label><input type="radio" name="sexe" value="feminin" id="sexe"> Feminin
-<input type="radio" name="Masculin" value="masculin" checked> masculin
+    <div class="form-group">
+        <label for="nom">Nom*</label>
+        <input type="name" class="form-control" id="nom" aria-describedby="emailHelp" placeholder="Veuillez saisir votre nom">
+    </div>
+
+    <div class="form-group">
+        <label for="prénom">Prénom*</label>
+        <input type="name" class="form-control" id="nom" aria-describedby="emailHelp" placeholder="Veuillez saisir votre prénom">
+    </div>
+
+
+
+<div class="row mx-auto mb-2">
+
+    <label for="sexe">Sexe*</label>
+</div>
+
+<div class="row mx-auto">
+    <label class="radio-inline"> <input type="radio" name="optradio" checked>Féminin
+    <label class="form-check-label" for="exampleRadios1">
+
+
+    <label class="radio-inline"> <input type="radio" name="optradio" checked>Masculin
+    <label class="form-check-label" for="exampleRadios1">  
+
+</div>
+
+<div class="form-group">
+    <label for="date de naissance">Date de naissance*</label>
+    <input type="date" class="form-control" id="Date de naissance" aria-describedby="emailHelp" placeholder="">
+</div>
+
+<div class="form-group">
+    <label for="code postal">Code postal*</label>
+    <input type="" class="form-control" id="Code postal" aria-describedby="emailHelp" placeholder="">
+</div>
+
+<div class="form-group">
+    <label for="adresse">Adresse</label>
+    <input type="" class="form-control" id="Adresse" aria-describedby="emailHelp" placeholder="">
+</div>
+
+<div class="form-group">
+    <label for="ville">Ville</label>
+    <input type="" class="form-control" id="Adresse" aria-describedby="emailHelp" placeholder="">
+</div>
+
+<div class="form-group">
+    <label for="email">Email*</label>
+    <input type="name" class="form-control" id="email" aria-describedby="emailHelp" placeholder="dave.loper@afpa.fr">
+</div>
+
+<h2>Votre demande</h2>
+
+<form>
+    <div class="form-group">
+        <label for="disabledSelect">Sujet</label>
+        <select id="disabledSelect" class="form-control mb-3 ">
+        <option>Veuillez sélectionner un sujet</option>
+        </select>
 </form>
 
-<br>
-<label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date">
-<br>
-<label for="codepostal">Code postal* :</label><input type="text" name="codepostal" id="codepostal">
-<br>
-<label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"  >
-<br>
-<label for="ville">Ville :</label><input type="text" name="ville" id="ville" >
-<br>
-<label for="mail">E-mail* :</label><input type="text" name="mail" id="mail" placeholder="dave.loper@afpa.fr"><br>
-</fieldset>
-<br>
-<br>
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Votre question* :</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</form>
 
-<fieldset style= width:98.5%;>
-    <legend>Votre demande</legend>
-<br>
-<label for="sujetselect">sujet</label>
-<select name="sujet" id="sujetselect">
-<option value="Veuillez sélectionnez un sujet">Veuillez sélectionner un sujet
-</option>
-    <option value="Mes commandes">Mes commandes</option>
-    <option value="Question sur un produit">Question sur un produit</option>
-    <option value="Réclamation">Réclamation</option>
-    <option value="Autres">Autres</option>
-</select>
-<br>
-<label for="question">Votre question*:</label><textarea name="Question" id="question" ></textarea></fieldset>
-<br>
-<input type="checkbox" name="acceptation-traitement-formulaire"> J'accepte le traitement informatique de ce formulaire
-<br>
+<div class="form-check mb-3 ">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+    J'accepte le traitement informatique de ce formulaire.
+    </label>
+</div>
 
-<input type="submit" value="Envoyer"><input type="reset" value="Annuler">
-<hr>
+<button type="button" class="btn btn-dark mb-3 border-primary ">Envoyer</button>
+<button type="button" class="btn btn-dark mb-3 border-primary ">Annuler</button>
+
+
 <footer>
-    <nav>
-        <ul id="information2">
-        <li><a href="Mentionslégales.html" title="Mentions légales">Mentions légales</a></li>
-        <li><a href="horaires.html" title="Horaires">Horaires</a></li>
-        <li><a href="plandusite.html" title="Plan du site">Plan du site</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">mentions légales <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">horaires</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">plan du site</a>
+            </li>
         </ul>
-    </nav>
+    </div>
+</nav>
 </footer>
 
+
+</span>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </body>
 </html>
